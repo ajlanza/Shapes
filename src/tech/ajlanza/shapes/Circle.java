@@ -50,7 +50,10 @@ public class Circle {
         return radius;
     }
 
-    public void setRadius(double radius) {
+    public void setRadius(double radius) throws IllegalArgumentException {
+        if(radius <= 0) {
+            throw new IllegalArgumentException("Radius must be greater than 0.");
+        }
         this.radius = radius;
     }
 }
