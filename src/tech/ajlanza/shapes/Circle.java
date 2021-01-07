@@ -56,4 +56,8 @@ public class Circle {
         }
         this.radius = radius;
     }
+
+    public double area() {
+        return Math.PI * Math.pow(getRadius(), 2);
+    }
 }
