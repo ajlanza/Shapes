@@ -60,4 +60,8 @@ public class Circle {
     public double area() {
         return Math.PI * Math.pow(getRadius(), 2);
     }
+
+    public double circumference() {
+        return 2 * Math.PI * getRadius();
+    }
 }
