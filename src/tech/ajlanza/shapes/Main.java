@@ -18,6 +18,7 @@ public class Main {
             System.out.println(t2);
             System.out.printf("The area of t1 is %.2f.\n", t1.area());
             System.out.printf("The area of t2 is %.2f.\n", t2.area());
+            System.out.printf("the perimeter of t1 is %.2f\n", t1.perimeter());
         } catch(IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }

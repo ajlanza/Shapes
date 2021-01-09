@@ -89,4 +89,11 @@ public class Triangle {
     public double area() {
         return (getX1() * (getY2() - getY3()) + getX2() * (getY3() - getY1()) + getX3() * (getY1() - getY2())) / 2;
     }
+
+    public double perimeter() {
+        double firstSide = Math.sqrt((Math.pow(getX1() - getX2(), 2) + Math.pow(getY1() - getY2(), 2)));
+        double secondSide = Math.sqrt((Math.pow(getX2() - getX3(), 2) + Math.pow(getY2() - getY3(), 2)));
+        double thirdSide = Math.sqrt((Math.pow(getX3() - getX1(), 2) + Math.pow(getY3() - getY1(), 2)));
+        return firstSide + secondSide + thirdSide;
+    }
 }
