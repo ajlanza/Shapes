@@ -85,4 +85,8 @@ public class Triangle {
     public void setY3(double y3) {
         this.y3 = y3;
     }
+
+    public double area() {
+        return (getX1() * (getY2() - getY3()) + getX2() * (getY3() - getY1()) + getX3() * (getY1() - getY2())) / 2;
+    }
 }
