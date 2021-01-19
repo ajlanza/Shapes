@@ -96,4 +96,5 @@ public class Triangle {
         double thirdSide = Math.sqrt((Math.pow(getX3() - getX1(), 2) + Math.pow(getY3() - getY1(), 2)));
         return firstSide + secondSide + thirdSide;
     }
+
 }
